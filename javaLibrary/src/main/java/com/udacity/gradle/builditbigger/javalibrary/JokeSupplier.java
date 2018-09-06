@@ -1,4 +1,4 @@
-package com.coreen.javalib;
+package com.udacity.gradle.builditbigger.javalibrary;
 
 import java.util.Arrays;
 import java.util.List;
