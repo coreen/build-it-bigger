@@ -38,6 +38,7 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
 
     implementation project(':javaLibrary')
+    implementation project(':androidlibrary')
 
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-ads:11.8.0'

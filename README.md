@@ -93,7 +93,10 @@ the Setup Cloud SDK.
 Start or stop your local server by using the gradle tasks as shown in the following
 screenshot:
 
-<img src="/FinalProject/GCE-server-gradle-tasks.png" height="500">
+<img src="/GCE-server-gradle-tasks.png" height="500">
+
+> The `appengineStart` command looks for the Cloud SDK at some well known locations by default, specifically `$HOME/google-cloud-sdk` for MacOS. To run the command without modifying the command itself, be sure to place the installation folder into the correct customary path.
+[Resource](https://github.com/GoogleCloudPlatform/appengine-plugins-core/issues/416#issuecomment-350181571)
 
 Once your local GCE server is started you should see the following at 
 [localhost:8080](http://localhost:8080)
@@ -104,10 +107,8 @@ Now you are ready to continue!
 
 Introduce a project dependency between your Java library 
 and your GCE module, and modify the GCE starter code to pull jokes from your Java library. 
-Create an AsyncTask to retrieve jokes using the template included int these 
-[instructions](https://github.com/GoogleCloudPlatform/gradle-appengine-templates/tree/77e9910911d5412e5efede5fa681ec105a0f02ad/HelloEndpoints#2-connecting-your-android-app-to-the-backend). 
-Make the button kick off a task to retrieve a joke, 
-then launch the activity from your Android Library to display it.
+Create an AsyncTask to retrieve jokes using the template included in these [instructions](https://github.com/GoogleCloudPlatform/gradle-appengine-templates/tree/77e9910911d5412e5efede5fa681ec105a0f02ad/HelloEndpoints#2-connecting-your-android-app-to-the-backend). 
+Make the button kick off a task to retrieve a joke, then launch the activity from your Android Library to display it.
 
 
 ### Step 4: Add Functional Tests
