@@ -14,8 +14,14 @@ public class JokeSupplier {
             "What can you serve, but never eat? A volleyball"
     );
 
+    private Random random;
+
+    public JokeSupplier() {
+        random = new Random();
+    }
+
     public String getJoke() {
-        final int random = new Random().nextInt(jokes.size());
-        return jokes.get(random);
+        final int index = random.nextInt(jokes.size());
+        return jokes.get(index);
     }
 }

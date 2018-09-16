@@ -36,7 +36,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     endpointsServer project(path: ':backend', configuration: 'endpoints')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    implementation project(':javaLibrary')
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-ads:11.8.0'
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
@@ -47,4 +50,11 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-v7:27.1.1'
+        force 'com.android.support:appcompat-v7:27.1.1'
+    }
 }
