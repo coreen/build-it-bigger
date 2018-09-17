@@ -19,3 +19,12 @@ Sep 17, 2018 12:10:14 AM com.google.appengine.tools.development.AbstractModule s
 INFO: The admin console is running at http://localhost:8080/_ah/admin
 Sep 16, 2018 5:10:14 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
+Sep 16, 2018 11:10:44 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
+INFO: /Users/Coreen/Desktop/and-projects/build-it-bigger/backend/build/exploded-backend/WEB-INF/appengine-web.xml updated, reloading the webapp!
+Sep 16, 2018 11:10:44 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/Coreen/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/Coreen/Desktop/and-projects/build-it-bigger/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
+Sep 16, 2018 11:10:44 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (/Users/Coreen/Desktop/and-projects/build-it-bigger/backend) is not equal to your 
+web application root (/Users/Coreen/Desktop/and-projects/build-it-bigger/backend/build/exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
