@@ -1,16 +1,10 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.udacity.gradle.builditbigger.javalibrary.JokeSupplier;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,10 +38,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-//        JokeSupplier jokeSupplier = new JokeSupplier();
-//        Toast.makeText(this, jokeSupplier.getJoke(), Toast.LENGTH_SHORT).show();
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "World"));
+        new EndpointsAsyncTask().execute(this);
     }
-
-
 }

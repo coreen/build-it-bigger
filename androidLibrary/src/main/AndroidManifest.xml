@@ -1,2 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.udacity.gradle.builditbigger.androidlibrary" />
+    package="com.udacity.gradle.builditbigger.androidlibrary">
+
+    <application>
+        <activity android:name=".JokesActivity" />
+    </application>
+
+</manifest>
