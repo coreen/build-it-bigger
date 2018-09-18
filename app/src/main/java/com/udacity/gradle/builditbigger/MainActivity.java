@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        new EndpointsAsyncTask().execute(this);
+        // Note: passing activity reference to network calling AsyncTask causes common memory leak
+        // Use getApplicationContext() instead of this to avoid
+        new EndpointsAsyncTask().execute(getApplicationContext());
     }
 }
